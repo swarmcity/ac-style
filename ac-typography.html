@@ -1,0 +1,269 @@
+<!--
+@license
+Copyright (c) 2016 Arcade City. All rights reserved.
+Component created by Bennisan
+/////////////////
+ARCADE CITY
+/////////////////
+
+* Montserrat license:
+SIL Open Font License v1.10
+
+This license can also be found at this permalink: https://www.fontsquirrel.com/license/montserrat
+
+Copyright (c) 2011-2012, Julieta Ulanovsky (julieta.ulanovsky@gmail.com), with Reserved Font Names ‘Montserrat’
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+-->
+
+
+<link rel="import" href="../polymer/polymer.html">
+
+<style is="custom-style">
+
+    @font-face {
+      font-family: Montserratultralight;
+      src: url(ac-fonts/Montserrat-UltraLight.otf);
+    }
+    @font-face {
+      font-family: Montserratlight;
+      src: url(ac-fonts/Montserrat-Light.otf);
+    }
+
+    @font-face {
+      font-family: Montserratlight;
+      src: url(ac-fonts/Montserrat-Light.otf);
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      src: url(ac-fonts/Montserrat-Regular.otf);
+    }
+
+    @font-face {
+      font-family: Montserratsemibold;
+      src: url(ac-fonts/Montserrat-Semibold.otf);
+    }
+
+    @font-face {
+      font-family: Montserratbold;
+      src: url(ac-fonts/Montserrat-Bold.otf);
+    }
+
+
+    @font-face {
+      font-family: Opensanslight;
+      src: url(ac-fonts/OpenSans-Light.ttf);
+    }
+
+    @font-face {
+      font-family: Opensans;
+      src: url(ac-fonts/OpenSans-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: Opensanssemibold;
+      src: url(ac-fonts/OpenSans-Semibold.ttf);
+    }
+
+    @font-face {
+      font-family: Opensansbold;
+      src: url(ac-fonts/OpenSans-Bold.ttf);
+    }
+
+
+
+  :root {
+
+
+    --montserrat-light: {
+      font-family: Montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;
+    };
+
+    --montserrat-reg: {
+      font-family: Montserrat;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 300;
+    };
+
+    --montserrat-semibold: {
+      font-family: Montserratsemibold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 700;
+    };
+
+    --montserrat-bold: {
+      font-family: Montserratbold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 900;
+    };
+
+
+    --opensans-light: {
+      font-family: Opensanslight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;
+    };
+
+    --opensans-reg: {
+      font-family: Opensans;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;
+    };
+
+
+    --ac-font-nowrap: {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    };
+
+
+    --ac-font-h1: {
+      @apply(--montserrat-light);
+      @apply(--ac-font-nowrap);
+      -webkit-margin-before:7px;
+      -webkit-margin-after:7px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 7px 0px 7px 0px;
+      padding: 0px;
+      font-size: 40px;
+      line-height: 52px;
+    };
+
+    --ac-font-h2: {
+      @apply(--montserrat-reg);
+      @apply(--ac-font-nowrap);
+      -webkit-margin-before:7px;
+      -webkit-margin-after:7px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;      
+      margin: 7px 0px 7px 0px;
+      padding: 0px;
+      font-size: 30px;
+      line-height: 34px;
+    };
+
+    --ac-font-h3: {
+      @apply(--montserrat-semibold);
+      @apply(--ac-font-nowrap);
+      -webkit-margin-before:10px;
+      -webkit-margin-after:10px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 10px 0px 10px 0px;
+      padding: 0px;
+      font-size: 24px;
+      line-height: 26px;
+    };
+
+    --ac-font-h4: {
+      @apply(--montserrat-bold);
+      @apply(--ac-font-nowrap);
+      -webkit-margin-before:10px;
+      -webkit-margin-after:10px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 10px 0px 10px 0px;
+      padding: 0px;
+      font-size: 20px;
+      line-height: 22px;
+    };
+
+
+
+    --ac-font-body1: {
+      @apply(--montserrat-light);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+    };
+
+
+    --ac-font-body2: {
+      @apply(--opensans-light);
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 20px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+    };
+
+    --ac-font-ahref: {
+      @apply(--ac-font-body1);
+      @apply(--montserrat-semibold);
+      color:var(--ac-blue);
+      text-decoration: none;
+      outline: none;
+    };
+
+    --ac-font-small: {
+      @apply(--montserrat-bold);
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 12px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+    };
+
+
+
+    --ac-font-menu: {
+      @apply(--montserrat-light);
+      @apply(--ac-font-nowrap);
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 24px;
+    };
+  }
+
+  .actypo h1 {
+    @apply(--ac-font-h1);
+  }
+  .actypo h2 {
+    @apply(--ac-font-h2);
+  }
+  .actypo h3 {
+    @apply(--ac-font-h3);
+  }
+  .actypo h4 {
+    @apply(--ac-font-h4);
+  }
+  .actypo p {
+    @apply(--ac-font-body1);
+  }
+
+
+  .actypoalt p {
+    @apply(--ac-font-body2);
+  }
+
+  /* phone */
+  @media all and (min-width: 0) and (max-width: 400px) and (orientation: portrait) { 
+  } 
+
+  /* between phone and desktop */
+  @media all and (min-width: 401px) and (max-width: 950px) { 
+
+  }
+
+  /* desktop-large */
+  @media all and (min-width: 951px) and (max-width: 1600px) {  
+
+  }
+</style>
+
